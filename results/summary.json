@@ -1,0 +1,45 @@
+{
+  "project_title": "RL based Robotic swarm coordination",
+  "author": "Vishwadeep Balakrishnan",
+  "episodes": 180,
+  "environment": {
+    "grid": [
+      50,
+      50
+    ],
+    "robots": 10,
+    "max_steps": 150,
+    "target_coverage": 0.9
+  },
+  "training": {
+    "last_50_mean_reward": 2668.8773387098313,
+    "last_50_mean_coverage": 0.5490824079485681,
+    "last_50_mean_collisions": 0.0
+  },
+  "evaluation": {
+    "learned": {
+      "final_coverage_percent": 79.89,
+      "steps": 150,
+      "total_collisions": 0,
+      "total_reward": 3810.353
+    },
+    "greedy": {
+      "final_coverage_percent": 64.64,
+      "steps": 150,
+      "total_collisions": 0,
+      "total_reward": 3251.303
+    },
+    "random": {
+      "final_coverage_percent": 11.34,
+      "steps": 150,
+      "total_collisions": 211,
+      "total_reward": 246.955
+    }
+  },
+  "display_names": {
+    "learned": "RL swarm",
+    "greedy": "Greedy Coverage Algorithm",
+    "random": "Random walk"
+  },
+  "result_note": "On the 50x50 map, the learned controller beats the Greedy Coverage Algorithm by a wider final-coverage margin while keeping zero collisions."
+}
