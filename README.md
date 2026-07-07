@@ -215,12 +215,3 @@ python scripts/run_experiment.py --episodes 180 --seed 17
 
 This will train the shared Q-policy, evaluate all controllers, save the model, save rollout data, regenerate the figures, and update `results/summary.json`.
 
-## Reproducibility notes
-
-The included results were generated with:
-
-```bash
-python scripts/run_experiment.py --episodes 180 --seed 17
-```
-
-The implementation uses fixed seeds for the included run. Small numerical differences can still happen across Python or NumPy versions, but the qualitative result should remain the same.
